@@ -15,211 +15,193 @@
 }
 
 body {
-    box-sizing: border-box; 
+    box-sizing: border-box;
     font-size: 15px;
 }
 
 .container {
-    margin-top: 10rem;
+    margin-top: 88px;
     margin-bottom: 88px;
-    border-radius: 25px;
+}
+.row {
+    margin: 0;
 }
 
-.card {
-    border: none;
-}
- 
-.card-body {
-    height: 440px;
-    display: flex;
-    flex-direction: column;
+.card-1,
+.card-2,
+.card-3 {
+    height: 450px;
+    max-width: 350px;
 }
 
-.card-body h1    {
-    color: var(--color-Very-light-grey);
+h1 {
     font-family: Big Shoulders Display, sans-serif;
+    text-transform: uppercase;
+    color: var(--color-Very-light-grey);
     margin-top: 35px;
     margin-left: 45px;
-    margin-bottom: 0;
-    text-transform: uppercase;
 }
 
-.card-body p {
-    color: var(--color-white);
-    font-size: 15px;
+p {
     font-family: Lexend Deca, sans-serif;
-    margin-left: 45px;
-    margin-top: 25px;
+    color: var(--color-white);
+    font-weight: 400;
+    margin-top: 35px;
     margin-right: 55px;
+    margin-left: 45px;
+    line-height: 1.6;
+    letter-spacing: .5px;
 }
 
-.card img {
-    width: 70px;
-    height: 44px;
-    margin-top: 15px;
+img {
+    margin-top: 45px;
     margin-left: 45px;
 }
 
-.row .card1 {
+button {
+    width: 140px;
+    height: 45px;
+    margin-top: 25px;
+    margin-left: 45px;
+    font-family: Lexend Deca;
+    letter-spacing: 1px;
+    border-radius: 40px;
+    background: var(--color-Very-light-grey);   
+    border: none; 
+    outline: none !important;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+
+.Btn1 {
+    color: var(--color-orange)
+}
+
+.Btn2 {
+    color: var(--color-dark-cyan)
+}
+
+.Btn3 {
+    color: var(--color-Very-dark-cyan);
+}
+
+.Btn1:active {
+    color: var(--color-Very-light-grey);
+    background-color: var(--color-orange);
+    border: 2.5px solid hsla(0, 0%, 100%, 0.75);
+}
+
+.Btn2:active {
+    color: var(--color-Very-light-grey);
+    background-color: var(--color-dark-cyan);
+    border: 2.5px solid hsla(0, 0%, 100%, 0.75);
+}
+
+.Btn3:active {
+    color: var(--color-Very-light-grey);
+    background-color: var(--color-Very-dark-cyan);
+    border: 2.5px solid hsla(0, 0%, 100%, 0.75);
+}
+
+.card-1 {
+    background-color: var(--color-orange);
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
 }
 
-.row .card3 {
+.card-2 {
+    background-color: var(--color-dark-cyan);
+}
+
+.card-3 {
+    background-color: var(--color-Very-dark-cyan);
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
 }
 
-.Bt {
-    width: 140px;
-    height: 45px;
-    margin-top: 35px;
-    margin-left: 45px;
-    font-family: Lexend Deca;
-    font-size: 15px;
-    color:var(--color-orange);
-    letter-spacing: 1px;
-    line-height: 15px;
-    border-radius: 40px;
-    border: none;
-    background: var(--color-Very-light-grey);
-    outline: none !important;
-}
+/* Media Queries */
 
-.bt1:hover {
-    outline: none;
-    color: var(--color-white);
-    background:var(--color-orange);
-    border: 2.5px solid hsla(0, 0%, 100%, 0.75);
-}
+@media (min-width: 376px) {
+    .card-1,
+    .card-2,
+    .card-3 {
+        max-width: 550px;
+    }
 
-.bt2 {
-    color: var(--color-dark-cyan);
-}
-
-.bt2:hover {
-    outline: none;
-    color: var(--color-white);
-    background: var(--color-dark-cyan);
-    border: 2.5px solid hsla(0, 0%, 100%, 0.75);
-}
-
-.bt3 {
-    color: var(--color-Very-dark-cyan);
-}
-
-.bt3:hover {
-    outline: none;
-    color: var(--color-white);
-    background: var(--color-Very-dark-cyan);
-    border: 2.5px solid hsla(0, 0%, 100%, 0.75);
-}
-  
-.bg-color1 {
-    background-color: var(--color-orange);
-}
-
-.bg-color2 {
-    background-color: var(--color-dark-cyan);
-}
-
-.bg-color3 {
-    background-color: var(--color-Very-dark-cyan);
+    button {
+        margin-top: 30px;
+    }
 }
 
 @media (min-width: 576px) {
-
-    .card {
-        margin-top: 7rem;
-        height: 500px;
+    .card-1,
+    .card-2,
+    .card-3 {
+        max-width: 550px;
     }
 
-    .card-body h1 {
-        margin-top: 20px;
-        margin-left: 30px;
+    button {
+        margin-top: 40px;
+    }
+}
+
+@media (min-width: 768px) {
+    .card-1,
+    .card-2,
+    .card-3 {
+        max-width: 875px;
     }
 
-    .card-body p {
-        font-size: 12px;
-        margin-left: 30px;
-    }
-
-    .card-body img {
-        margin-left: 30px;
-    }
-
-    .row .card1 {
-        border-top-left-radius: 12px;
-        border-bottom-left-radius: 12px;
-        border-top-right-radius: 0;
-    }
-    
-    .row .card3 {
-        border-top-right-radius: 12px;
-        border-bottom-right-radius: 12px;
-        border-bottom-left-radius: 0px;
-    }
-
-    .card button {
-        margin-left: 30px;
-        width: 125px;
-        margin-top: 70px;
-    }
-
-    .card-body .bt3 {
-        margin-top: 50px;
+    button {
+        margin-top: 55px;
     }
 }
 
 @media (min-width: 992px) {
-
-    .row .card {
-        height: 550px;
+    .card-1,
+    .card-2,
+    .card-3 {
+        max-width: 950px;
     }
-    
-    .row .card1 {
+}
+
+@media (min-width: 1200px) {
+    .container {
+        margin-top: 170px;
+    }
+    .flex {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .ran{
+        padding: 0;
+    }
+
+    .card-1,
+    .card-2,
+    .card-3 {
+        height: 500px;
+    }
+
+    .card-1 {
         border-top-left-radius: 12px;
         border-bottom-left-radius: 12px;
         border-top-right-radius: 0;
     }
 
-    .row .card3 {
+    .card-3 {
         border-top-right-radius: 12px;
         border-bottom-right-radius: 12px;
-        border-bottom-left-radius: 0px;
+        border-bottom-left-radius: 0;   
     }
 
-    .card-body img {
-        margin-left: 45px;
+    button {
+        margin-top: 80px;
     }
 
-    .card-body h1 {
-        margin-top: 35px;
-        margin-left: 45px;
-    }
-
-    .card-body p {
-       font-size: 17px;
-       margin-top: 30px;
-       margin-left: 45px;
-    }
-
-    .card button {
-        width: 145px;
-        margin-top: 70px;
-        margin-left: 45px;
-    }
-
-    .card-body .bt1 {
-        margin-top: 120px;
-    }
-
-    .card-body .bt2 {
-        margin-top: 120px;
-    }
-
-    .card-body .bt3 {
-        margin-top: 120px;
-    }
 }
 
